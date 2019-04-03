@@ -1,6 +1,6 @@
 workflow ptj-ServiceBusMonitor
 {
-
+<#
     param(
         [parameter(Mandatory=$True)]
         [string] $WorkspaceId,
@@ -8,7 +8,7 @@ workflow ptj-ServiceBusMonitor
         [parameter(Mandatory=$True)]
         [string] $WorkspaceKey        
     )
-
+#>
     Write-Output ("ptj-ServiceBusMonitor Starting")
 
     $connectionName = "AzureRunAsConnection"
